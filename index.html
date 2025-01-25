@@ -12,34 +12,45 @@
 <body class="bg-gradient-to-bl from-indigo-950 to-sky-950">
 
     <div class="grid place-content-center w-screen h-screen">
-        <div class="flex flex-col w-[80vw] h-[80vh] bg-amber-50 items-center gap-8 rounded-4xl shadow-lg">
-            <div class="flex my-12">
+        <div class="flex flex-col w-[80vw] h-[85vh] bg-amber-50 items-center gap-8 rounded-4xl shadow-lg">
+            <div class="flex mt-14 flex-col">
                 <p class="text-3xl font-semibold">Rock, paper, scissor</p>
+
+                <p class="self-center mt-4 font-semibold">SCORE :</p>
+                <div class="flex justify-center gap-8">
+                    <p>YOU : 0</p>
+                    <p>IA : 0</p>
+                </div>
             </div>
             <div class="flex gap-8">
 
-                <div class="userCard flex flex-col self-center p-4">
+                <div class="flex flex-col self-center p-4" id="userCard">
                     <img src="./img/question.png" alt="" class="w-[10rem] h-[10rem]">
                 </div>
                 <p class="self-center">VS.</p>
-                <div class="userCard flex flex-col p-4">
+                <div class="flex flex-col p-4" id="AICard">
                     <img src="./img/question.png" alt="" class="w-[10rem] h-[10rem]">
                 </div>
 
             </div>
-            <div class="flex flex-col m-4 gap-8">
-                <p class="self-center text-xl">Choisissez pierre, papier, ou ciseaux</p>
+
+            <div class="h-[3rem]" id="header">
+                
+            </div>
+
+            <div class="flex flex-col m-4 gap-4">
+                <p class="self-center text-xl">Choisissez pierre, feuille, ou ciseaux</p>
                 
                 <div class="flex gap-8">
 
-                    <button class="w-[8rem] cursor-pointer p-6 rounded-full hover:bg-amber-400 transition-all duration-200"  type="button" id="rock"><img src="./img/fist.png" alt=""></button>
+                    <button class="w-[8rem] cursor-pointer p-6 rounded-full hover:bg-amber-400 transition-all duration-200"  type="button" id="rock"><img src="./img/rock.png" alt=""></button>
                     
-                    <button class="w-[8rem] cursor-pointer p-6 rounded-full hover:bg-amber-400 transition-all duration-200"  type="button" id="paper"><img src="./img/palm.png" alt=""></button>
+                    <button class="w-[8rem] cursor-pointer p-6 rounded-full hover:bg-amber-400 transition-all duration-200"  type="button" id="paper"><img src="./img/paper.png" alt=""></button>
                     
                     <button class="w-[8rem] cursor-pointer p-6 rounded-full hover:bg-amber-400 transition-all duration-200"  type="button" id="scissor"><img src="./img/scissor.png" alt=""></button>
                     
                 </div>
-                <button class="py-4 px-8 bg-indigo-700 hover:bg-indigo-900 w-fit self-center text-white font-semibold rounded-full cursor-pointer shadow-md transition-all duration-200">VALIDER</button>
+                <button class="py-4 px-8 bg-indigo-700 hover:bg-indigo-900 w-fit self-center text-white font-semibold rounded-full cursor-pointer shadow-md transition-all duration-200" id="validate">VALIDER</button>
             </div>
         </div>
     </div>

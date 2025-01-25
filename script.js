@@ -15,8 +15,8 @@ rock.addEventListener('click', () => {
     paper.classList.remove('bg-amber-400')
     scissor.classList.remove('bg-amber-400')
     userPlay = "rock"
-    document.getElementById('userCard').innerHTML = `<img src="./img/${userPlay}.png" alt="" class="w-[10rem] h-[10rem]">`
-    document.getElementById('AICard').innerHTML = `<img src="./img/question.png" alt="" class="w-[10rem] h-[10rem]">`
+    document.getElementById('userCard').innerHTML = `<img src="./img/${userPlay}.png" alt="" class="w-[5rem] h-[5rem] md:w-[10rem] md:h-[10rem]">`
+    document.getElementById('AICard').innerHTML = `<img src="./img/question.png" alt="" class="w-[5rem] h-[5rem] md:w-[10rem] md:h-[10rem]">`
 })
 
 paper.addEventListener('click', () => {
@@ -24,8 +24,8 @@ paper.addEventListener('click', () => {
     rock.classList.remove('bg-amber-400')
     scissor.classList.remove('bg-amber-400')
     userPlay = "paper"
-    document.getElementById('userCard').innerHTML = `<img src="./img/${userPlay}.png" alt="" class="w-[10rem] h-[10rem]">`
-    document.getElementById('AICard').innerHTML = `<img src="./img/question.png" alt="" class="w-[10rem] h-[10rem]">`
+    document.getElementById('userCard').innerHTML = `<img src="./img/${userPlay}.png" alt="" class="w-[5rem] h-[5rem] md:w-[10rem] md:h-[10rem]">`
+    document.getElementById('AICard').innerHTML = `<img src="./img/question.png" alt="" class="w-[5rem] h-[5rem] md:w-[10rem] md:h-[10rem]">`
 })
 
 scissor.addEventListener('click', () => {
@@ -33,8 +33,8 @@ scissor.addEventListener('click', () => {
     rock.classList.remove('bg-amber-400')
     paper.classList.remove('bg-amber-400')
     userPlay = "scissor"
-    document.getElementById('userCard').innerHTML = `<img src="./img/${userPlay}.png" alt="" class="w-[10rem] h-[10rem]">`
-    document.getElementById('AICard').innerHTML = `<img src="./img/question.png" alt="" class="w-[10rem] h-[10rem]">`
+    document.getElementById('userCard').innerHTML = `<img src="./img/${userPlay}.png" alt="" class="w-[5rem] h-[5rem] md:w-[10rem] md:h-[10rem]">`
+    document.getElementById('AICard').innerHTML = `<img src="./img/question.png" alt="" class="w-[5rem] h-[5rem] md:w-[10rem] md:h-[10rem]">`
 })
 
 validate.addEventListener('click', () => {
@@ -46,11 +46,11 @@ validate.addEventListener('click', () => {
 
     if (userPlay == undefined) {
         header.innerHTML = "<p>Vous n'avez pas choisi</p>"
-        document.getElementById('userCard').innerHTML = `<img src="./img/question.png" alt="" class="w-[10rem] h-[10rem]">`
-        document.getElementById('AICard').innerHTML = `<img src="./img/question.png" alt="" class="w-[10rem] h-[10rem]">`
+        document.getElementById('userCard').innerHTML = `<img src="./img/question.png" alt="" class="w-[5rem] h-[5rem] md:w-[10rem] md:h-[10rem]">`
+        document.getElementById('AICard').innerHTML = `<img src="./img/question.png" alt="" class="w-[5rem] h-[5rem] md:w-[10rem] md:h-[10rem]">`
     } else {
         // console.log('Joueur : ' + userPlay)
-        document.getElementById('userCard').innerHTML = `<img src="./img/${userPlay}.png" alt="" class="w-[10rem] h-[10rem]">`
+        document.getElementById('userCard').innerHTML = `<img src="./img/${userPlay}.png" alt="" class="w-[5rem] h-[5rem] md:w-[10rem] md:h-[10rem]">`
 
         let IAPlay = Math.floor(Math.random() * 3)
         // let IAPlay = 1
@@ -63,7 +63,7 @@ validate.addEventListener('click', () => {
             IAPlay = 'scissor'
         }
         // console.log('IA : ' + IAPlay)
-        document.getElementById('AICard').innerHTML = `<img src="./img/${IAPlay}.png" alt="" class="w-[10rem] h-[10rem]">`
+        document.getElementById('AICard').innerHTML = `<img src="./img/${IAPlay}.png" alt="" class="w-[5rem] h-[5rem] md:w-[10rem] md:h-[10rem]">`
 
         switch (userPlay) {
             case 'rock':
@@ -121,16 +121,7 @@ validate.addEventListener('click', () => {
                 break
         }
 
-
-
-
-
-
-
-
         userPlay = undefined
     }
-
-
 
 })
